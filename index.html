@@ -3,160 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EpsteinCoin | Official Base Deployment</title>
+    <title>EpsteinCoin - Official Website</title>
     <style>
-        :root {
-            --primary: #000000; /* Black for professional look */
-            --bg: #ffffff;      /* Pure White */
-            --card: #f8f9fa;    /* Very light gray for card */
-            --text: #111827;    /* Almost black */
-            --subtext: #6b7280; /* Gray */
-        }
-
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0f172a;
+            color: #ffffff;
             margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            text-align: center;
         }
 
         .container {
-            width: 100%;
-            max-width: 500px;
-            padding: 3rem 2rem;
-            background: var(--card);
-            border-radius: 24px;
-            border: 1px solid #e5e7eb;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo-circle {
-            width: 80px;
-            height: 80px;
-            background: #000000;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 800;
-            margin: 0 auto 1.5rem auto;
-            color: white;
+            max-width: 600px;
+            padding: 2rem;
+            background: #1e293b;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
         h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin: 0 0 0.5rem 0;
-            letter-spacing: -0.025em;
-        }
-
-        p.subtitle {
-            color: var(--subtext);
-            font-size: 0.95rem;
-            margin-bottom: 2rem;
-            line-height: 1.5;
-        }
-
-        .data-label {
-            text-transform: uppercase;
-            font-size: 0.7rem;
-            letter-spacing: 0.1em;
-            color: var(--subtext);
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
-            font-weight: 600;
+            color: #38bdf8;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
         }
 
         .contract-box {
-            background: #ffffff;
+            background: #0f172a;
             padding: 1rem;
-            border-radius: 12px;
-            font-family: 'SF Mono', 'Roboto Mono', monospace;
-            font-size: 0.85rem;
-            color: #374151;
-            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-family: monospace;
             word-break: break-all;
             margin-bottom: 2rem;
+            border: 1px solid #334155;
+            color: #fbbf24;
         }
 
         .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding: 14px 0;
-            border-radius: 12px;
-            font-weight: 600;
-            text-decoration: none;
-            margin-bottom: 10px;
-            transition: transform 0.1s;
-            box-sizing: border-box;
-        }
-
-        .btn:active {
-            transform: scale(0.98);
-        }
-
-        .btn-primary {
-            background-color: #000000;
+            display: inline-block;
+            background-color: #2563eb;
             color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
         }
 
         .btn-secondary {
-            background-color: white;
-            color: #374151;
-            border: 1px solid #d1d5db;
-        }
-
-        .btn-secondary:hover {
-            background-color: #f3f4f6;
+            background-color: #475569;
         }
 
         .footer {
-            margin-top: 2.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #e5e7eb;
-            font-size: 0.75rem;
-            color: #6b7280;
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #64748b;
         }
         
-        .footer a {
-            color: #6b7280;
-            text-decoration: none;
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: #38bdf8;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 2rem;
+            color: #0f172a;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="logo-circle">EPC</div>
+        <div class="logo">EPC</div>
         
         <h1>EpsteinCoin</h1>
-        <p class="subtitle">Decentralized community asset deployed on the Base Network. Secure, transparent, and verified.</p>
+        <p>The official community token on the Base Network.</p>
 
-        <div class="data-label">Official Contract Address</div>
+        <p><strong>Official Contract Address:</strong></p>
         <div class="contract-box">
             0xA406794C25658fE194Fa15a8DFFA8B69AD69741B
         </div>
 
-        <a href="https://app.uniswap.org/#/swap?outputCurrency=0xA406794C25658fE194Fa15a8DFFA8B69AD69741B&chain=base" class="btn btn-primary" target="_blank">
-            Trade on Uniswap
-        </a>
-        
-        <div style="display: flex; gap: 10px;">
-            <a href="https://twitter.com" class="btn btn-secondary" target="_blank">Twitter</a>
+        <div>
+            <a href="https://app.uniswap.org/#/swap?outputCurrency=0xA406794C25658fE194Fa15a8DFFA8B69AD69741B&chain=base" class="btn" target="_blank">Buy on Uniswap</a>
+            <a href="https://twitter.com" class="btn btn-secondary" target="_blank">Twitter / X</a>
             <a href="https://t.me" class="btn btn-secondary" target="_blank">Telegram</a>
         </div>
 
         <div class="footer">
-            <p>Verification Contact: <a href="mailto:epsteincoin@proton.me">epsteincoin@proton.me</a></p>
-            <p>&copy; 2026 EpsteinCoin Foundation. All rights reserved.</p>
+            <p>Contact: epsteincoin@proton.me</p>
+            <p>&copy; 2026 EpsteinCoin Project</p>
         </div>
     </div>
 
