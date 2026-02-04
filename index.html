@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPC Protocol | Official Base Deployment</title>
+    <style>
+        :root {
+            --primary: #3b82f6; /* Modern Blue */
+            --bg: #0f172a;      /* Deep Navy */
+            --card: #1e293b;    /* Lighter Navy */
+            --text: #f1f5f9;    /* Off-white */
+            --subtext: #94a3b8; /* Muted gray */
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: 3rem 2rem;
+            background: var(--card);
+            border-radius: 24px;
+            border: 1px solid #334155;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-circle {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin: 0 auto 1.5rem auto;
+            color: white;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.025em;
+        }
+
+        p.subtitle {
+            color: var(--subtext);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        .data-label {
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            color: var(--subtext);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .contract-box {
+            background: #020617;
+            padding: 1rem;
+            border-radius: 12px;
+            font-family: 'SF Mono', 'Roboto Mono', monospace;
+            font-size: 0.85rem;
+            color: #60a5fa;
+            border: 1px solid #1e40af;
+            word-break: break-all;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 14px 0;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: transform 0.1s, opacity 0.2s;
+            box-sizing: border-box;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--subtext);
+            border: 1px solid #334155;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: white;
+        }
+
+        .footer {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #334155;
+            font-size: 0.75rem;
+            color: #475569;
+        }
+        
+        .footer a {
+            color: #64748b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-circle">EPC</div>
+        
+        <h1>EPC Protocol</h1>
+        <p class="subtitle">Decentralized community asset deployed on the Base Network. Secure, transparent, and verified.</p>
+
+        <div class="data-label">Official Contract Address</div>
+        <div class="contract-box">
+            0xA406794C25658fE194Fa15a8DFFA8B69AD69741B
+        </div>
+
+        <a href="https://app.uniswap.org/#/swap?outputCurrency=0xA406794C25658fE194Fa15a8DFFA8B69AD69741B&chain=base" class="btn btn-primary" target="_blank">
+            Trade on Uniswap
+        </a>
+        
+        <div style="display: flex; gap: 10px;">
+            <a href="https://twitter.com" class="btn btn-secondary" target="_blank">Twitter</a>
+            <a href="https://t.me" class="btn btn-secondary" target="_blank">Telegram</a>
+        </div>
+
+        <div class="footer">
+            <p>Verification Contact: <a href="mailto:epsteincoin@proton.me">epsteincoin@proton.me</a></p>
+            <p>&copy; 2026 EPC Protocol Foundation. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
